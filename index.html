@@ -1,1 +1,19 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript ใน HTML</title>
+</head>
+<body>
+  <h1 id="greeting">สวัสดี!</h1>
+  <button onclick="sayHello()">กดที่นี่</button>
+
+  <script>
+    function sayHello() {
+      const name = "NewYear";
+      document.getElementById("greeting").textContent = "สวัสดี " + name + "!";
+      console.log("คุณกดปุ่มแล้ว!");
+    }
+  </script>
+</body>
+</html>
